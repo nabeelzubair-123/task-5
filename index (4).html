@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>QUESTION 5</title>
+</head>
+
+<body>
+    <h1>Find Leap Year Or Not A Leap Year</h1>
+    <script>
+        function checkLeapYear(year) {
+
+            //three conditions to find out the leap year
+            if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+                document.write(year + ' is a leap year');
+            } else {
+                document.write(year + ' is not a leap year');
+            }
+        }
+
+        // take input
+        const year = prompt('Enter a year:');
+
+        checkLeapYear(year);
+    </script>
+</body>
+
+</html>
